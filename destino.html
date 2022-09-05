@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destino</title>
 </head b>
@@ -11,15 +12,18 @@
 
 <body>
     <div class="container bg-info">
+
         <!--inicio da navbar-->
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-info ">
             <div class="container-fluid">
                 <img src="imagens/mundo3.png">
                 <a class="navbar-brand" href="home.html" style="font-size:35px;">DREAM TRIP</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -40,20 +44,93 @@
         </nav>
         <!--fim da navbar-->
         <!--inicio jumbottrom-->
-        <div class="p-5 bg-light">
+        <div class="p-5 bg-light" style="border-radius: 20px;">
             <div class="container">
                 <h1 class="display-3">Destinos</h1>
                 <hr class="my-2">
             </div>
         </div>
+        <br><br>
         <!--fim jumbottrom-->
+        <!---incio form comprar passagem-->
+        <div class=" p-5 bg-light" style="border-radius:100px;">
+            <form class="row gx-3 gy-2 align-items-center">
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                    <h1 class="display-5">Comprar Passagem</h1>
+                    <hr class="my-2">
+                    <br>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+
+                    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group" ">
+                            <input type=" checkbox" class="btn-check" id="b" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btncheck1">somente ida</label>
+                        <input type="checkbox" class="btn-check" id="" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btncheck2">ida e volta</label>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                        <label class="form-check-label" for="flexCheckIndeterminate">
+                            Com bagagem dispachada
+                        </label>
+                    </div>
+                </div>
+                <br><br><br><br><br><br>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <select class="form-select" aria-label="Disabled select example">
+                            <option selected>buscar origem</option>
+                            <option value="1">Salvador</option>
+                            <option value="2">Rio de Janeiro</option>
+                            <option value="3">São Paulo</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <select class="form-select" aria-label="Disabled select example">
+                            <option selected>buscar destino</option>
+                            <option value="1">Salvador</option>
+                            <option value="2">Rio de Janeiro</option>
+                            <option value="3">São Paulo</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+
+                        <div class="input-group flex-nowrap">
+                            <input type="text" class="form-control" placeholder="Data ida">
+                            <input type="text" class="form-control" placeholder="Data volta">
+                        </div>
+
+                    </div>
+                    <div class="col-lg-1 col-md-6 col-sm-12">
+                        <select class="form-select" aria-label="Disabled select example">
+                            <option selected>passageiros</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12">
+                        <button type="submit" class="btn btn-primary" style="border-radius:10px ;">Buscar voo</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+        <!----final do formulario-->
+
 
         <div class="row  my-2">
 
             <h2 style="background-color: rgb(72, 154, 221); color:white;">Nacionais</h2>
             <div class="col-lg-4 col-md-6 col-sm-12 ">
                 <div class="card text-start">
-                    <img class="card-img-top" src="imagens/balneario-camboriu-parque-unipraias-15-sc-divulgacao-cvc-.jpg" alt="Title">
+                    <img class="card-img-top"
+                        src="imagens/balneario-camboriu-parque-unipraias-15-sc-divulgacao-cvc-.jpg" alt="Title">
                     <div class="card-body">
                         <h4 class="card-title">Balneario Caboriu</h4>
                         <h6>conheça agora!</h6>
@@ -73,7 +150,8 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card text-start">
-                    <img class="card-img-top" src="imagens/foz-do-iguacu-parque-nacional-shutterstock-337634303.jpg" alt="Foz Iguaçú">
+                    <img class="card-img-top" src="imagens/foz-do-iguacu-parque-nacional-shutterstock-337634303.jpg"
+                        alt="Foz Iguaçú">
                     <div class="card-body">
                         <h4 class="card-title">Foz Iguaçú</h4>
                         <h6>conheça agora!</h6>
@@ -194,7 +272,8 @@
 
         <nav class="navbar navbar-light bg-light ">
             <div class="container-fluid " style="justify-content: center;">
-                <span class="navbar-brand mb-0 h1 "><img src="imagens/formas-pagamento.png" style=" height: 100px;"></span>
+                <span class="navbar-brand mb-0 h1 "><img src="imagens/formas-pagamento.png"
+                        style=" height: 100px;"></span>
             </div>
         </nav>
 
@@ -203,7 +282,9 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
 </body>
 
